@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('consultation', function (Blueprint $table) {
             $table->id();
             $table->integer('consultation_id');
-            $table->name('name');
+            $table->string('name');
             $table->timestamps();
             $table->softDeletes();
         });
