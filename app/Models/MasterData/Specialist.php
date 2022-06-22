@@ -28,4 +28,10 @@ class Permission extends Model
         'updated_at',
         'deleted_at',
     ];
+
+     // one to many
+     public function doctor()
+     {
+         return $this->hasMany('App\Models\Operational\Doctor', 'specialist_id');
+     }
 }
